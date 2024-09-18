@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" coontent="width = device-width, intitial-scale=1.0">
+        <title>Calculator</title>
+        <link href="./styles.css" rel="stylesheet">        
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+              <div class="display">
+                <input id="display" type="text" class="inp-display">
+              </div>
+              <div class="buttons">
+                <div class="row">
+                    
+                    <button class="button clearbtn" onclick="clearVal()">AC</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="btnclick('7')">7</button>
+                    <button class="button" onclick="btnclick('8')">8</button>
+                    <button class="button" onclick="btnclick('9')">9</button>
+                    <button class="button" onclick="setOperator('/')">/</button>
+                </div>
+                
+                <div class="row">
+                    <button class="button" onclick="btnclick('4')">4</button>
+                    <button class="button" onclick="btnclick('5')">5</button>
+                    <button class="button" onclick="btnclick('6')">6</button>
+                    <button class="button" onclick="setOperator('*')">x</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="btnclick('1')">1</button>
+                    <button class="button" onclick="btnclick('2')">2</button>
+                    <button class="button" onclick="btnclick('3')">3</button>
+                    <button class="button" onclick="setOperator('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="btnclick('0')">0</button>
+                    <button class="button" onclick="btnclick('.')">.</button>
+                    <button class="button equalbutton" onclick="calculate()">=</button>
+                    <button class="button" onclick="setOperator('+')">+</button>
+                </div>
+              </div>
+                
+            </div>
+            
+
+
+
+
+
+
+        </div>
+    <script src="./script.js"></script>    
+    </body>
+</html>
